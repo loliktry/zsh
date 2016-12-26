@@ -53,6 +53,13 @@ call vundle#begin()
  Plugin 'shawncplus/phpcomplete.vim'
  "tmuxline for line status 
  Plugin 'edkolev/tmuxline.vim'
+ "complate bracket
+ Plugin 'jiangmiao/auto-pairs'
+ "complate html
+ Plugin 'mattn/emmet-vim'
+ "Repeat command with .
+ Plugin 'tpope/vim-repeat'
+
  " non github repos
  " Plugin 'git://git.wincent.com/command-t.git'
  " ...
@@ -358,6 +365,8 @@ let g:tmuxline_preset = {
       \'y'    : '#(date)',
       \'z'    : '#H'}
 
+"Auto-Pair
+let g:AutoPairsFlyMode = 1
 
 " Tender
 if (has("termguicolors"))
